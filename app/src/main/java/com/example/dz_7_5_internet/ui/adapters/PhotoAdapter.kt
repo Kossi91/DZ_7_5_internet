@@ -37,11 +37,11 @@ class PhotoAdapter : ListAdapter<Photo, PhotoAdapter.PhotoViewHolder>(diffUtil) 
     companion object {
         val diffUtil = object : DiffUtil.ItemCallback<Photo>() {
             override fun areItemsTheSame(oldItem: Photo, newItem: Photo): Boolean {
-                return oldItem == newItem
+                return oldItem.id == newItem.id
             }
 
             override fun areContentsTheSame(oldItem: Photo, newItem: Photo): Boolean {
-                return oldItem.id == newItem.id
+                return oldItem == newItem
             }
         }
     }
