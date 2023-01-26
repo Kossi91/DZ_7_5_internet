@@ -34,7 +34,7 @@ class PhotoViewModel @Inject constructor(private val repository: PhotoRepository
             }
         )
     }
-    fun getLocalPhoto() {
+    private fun getLocalPhoto() {
         localPhotosLiveData = repository.getLocalPhotos()
     }
 }

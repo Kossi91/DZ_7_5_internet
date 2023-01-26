@@ -1,6 +1,5 @@
 package com.example.dz_7_5_internet.data.repositories
 
-import androidx.lifecycle.LiveData
 import com.example.dz_7_5_internet.data.local.room.dao.PhotoDao
 import com.example.dz_7_5_internet.data.models.Photo
 import com.example.dz_7_5_internet.data.remote.api.PostsApiService
